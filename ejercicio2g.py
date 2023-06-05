@@ -41,8 +41,8 @@ reyna = (square).under(queen)
 
 # El rey blanco unicamente esta posicionado sobre un cuadrado oscuro
 rey = cuadradoNegro.under(king)
-filaVaciaNegro = (cuadradoNegro.join(square)).horizontalRepeat(4)
 filaVaciaBlanco = (square.join(cuadradoNegro)).horizontalRepeat(4)
+filaVaciaNegro = (cuadradoNegro.join(square)).horizontalRepeat(4)
 
 # En las siguientes lineas de código se genera cada una de las filas del tablero
 fila1 = torreNegraCC.join(caballoNegroCO).join(alfilNegroCC).join(reynaNegra).join(reyNegro).join(alfilNegroCO).join(caballoNegroCC).join(torreNegraCO)
@@ -50,7 +50,7 @@ fila2 = (peonNegroCO.join(peonNegroCC)).horizontalRepeat(4)
 
 fila7 = (peonCC.join(peonCO)).horizontalRepeat(4)
 fila8 = torreCO.join(caballoCC).join(alfilCO).join(rey).join(reyna).join(alfilCC).join(caballoCO).join(torreCO)
-dibfinal = Picture(fila1.img + fila2.img + filaVaciaNegro.img + filaVaciaBlanco.img + filaVaciaNegro.img + filaVaciaBlanco.img + fila7.img + fila8.img)
+dibfinal = Picture(fila1.img + fila2.img + filaVaciaBlanco.img + filaVaciaNegro.img + filaVaciaBlanco.img + filaVaciaNegro.img + fila7.img + fila8.img)
 
 # Este draw une todas las filas creadas anteriormente y se genera el tablero completo
 draw(dibfinal)
