@@ -18,6 +18,8 @@ def draw(picture):
   DISPLAY=pygame.display.set_mode((640, 480))
   DISPLAY.fill(BLUE)
 
+  print("hola")
+  
   n = len(img)
   for i in range(0, n):
     parseLine(DISPLAY, i, img[i])
@@ -28,4 +30,3 @@ def draw(picture):
         pygame.quit()
         #sys.exit()
     pygame.display.update()
-
