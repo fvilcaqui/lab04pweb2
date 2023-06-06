@@ -5,7 +5,7 @@ from chessPictures import *
 fil1 = knight.join(knight.negative())
 # Guardare al inverso de la primera fila osea los colores seran al reves
 fil2 = fil1.negative()
-# Guardaremos ambas imagenes en Picture
-dibFinal = fil1.up(fil2)
+# Guardaremos ambas imagenes en dibFinal
+dibFinal = Picture(fil1.img + fil2.img)
 # Imprimire ambas filas
-draw(dibFinal.verticalRepeat(2))
+draw(dibFinal)
